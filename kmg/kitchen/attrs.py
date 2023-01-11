@@ -5,7 +5,7 @@ U = TypeVar("U")
 V = TypeVar("V")
 
 
-def attrs_type_passthrough(
+def type_passthrough(
     type_: Type[T], converter: Callable[[U], V]
 ) -> Callable[[T | U], T | V]:
     """
