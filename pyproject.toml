@@ -4,11 +4,10 @@ version = "0.0.1"
 description = "A bunch of helpful, reusable snippets for my own python usage."
 
 
-dependencies = [
-    "attrs",
-]
-
 [project.optional-dependencies]
+all = ["attrs", "requests"]
+attrs = ["attrs"]
+requests = ["requests"]
 dev = [
     "ipython", "pytest", "black", "isort", "pylama", "pytest-asyncio"
 ]

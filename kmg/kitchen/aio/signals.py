@@ -1,8 +1,8 @@
 import asyncio
-from collections import UserDict
 import collections.abc as abc
 import signal
-from typing import TypeVar, Any
+from collections import UserDict
+from typing import Any, TypeVar
 
 
 class _SignalListenerMap(UserDict[int, asyncio.Event]):

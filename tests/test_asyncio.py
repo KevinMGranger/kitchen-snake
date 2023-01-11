@@ -1,6 +1,6 @@
 from typing import Awaitable, Callable
 import pytest
-from kmg.recipes.aio import (
+from kmg.kitchen.aio import (
     CancelledFromInside,
     CancelledFromOutside,
     distinguish_cancellation,

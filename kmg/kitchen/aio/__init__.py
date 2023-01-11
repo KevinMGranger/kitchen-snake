@@ -1,9 +1,9 @@
-from .signals import check_signal
 from .cancellation import (
-    CancelledFromOutside,
     CancelledFromInside,
+    CancelledFromOutside,
     distinguish_cancellation,
 )
+from .signals import check_signal
 
 __all__ = [
     "check_signal",
