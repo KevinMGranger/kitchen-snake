@@ -1,1 +1,4 @@
-A bunch of helpful, reusable snippets for my own python usage.
+🚰 🐍
+
+Everything including the kitchen ~~sink~~ snake:
+unclogging your coding experience.
