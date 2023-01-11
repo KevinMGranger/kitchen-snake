@@ -1,5 +1,5 @@
 [project]
-name = "recipes"
+name = "kitchen-snake"
 version = "0.0.1"
 description = "A bunch of helpful, reusable snippets for my own python usage."
 
