@@ -1,4 +1,4 @@
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 
 def is_tz_aware(d: datetime) -> bool:
@@ -11,6 +11,15 @@ def must_be_tz_aware(d: datetime):
     """
     if not is_tz_aware(d):
         raise ValueError("datetime must be timezone aware")
+
+
+def is_positive_delta(d: timedelta) -> bool:
+    return d >= timedelta()
+
+
+def must_be_positive_timedelta(d: timedelta):
+    if not is_positive_delta(d):
+        raise ValueError("timedelta must be positive")
 
 
 def utcnow() -> datetime:
