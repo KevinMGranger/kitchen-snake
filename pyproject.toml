@@ -6,11 +6,14 @@ description = 'Helpful "kitchen sink" utilities for python.'
 
 [project.optional-dependencies]
 all = ["attrs", "requests"]
-attrs = ["attrs"]
+attrs = ["attrs"] # TODO: the attrs code right now doesn't actually use attrs
 requests = ["requests"]
 dev = [
     "ipython", "pytest", "black", "isort", "pylama", "pytest-asyncio"
 ]
+
+[tool.setuptools]
+packages = ["kmg"]
 
 [tool.isort]
 profile = "black"
