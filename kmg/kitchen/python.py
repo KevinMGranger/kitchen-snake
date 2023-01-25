@@ -34,6 +34,12 @@ def members(obj) -> list[str]:
     return [member for member in dir(obj) if not member.startswith("_")]
 
 
+class Unreachable(BaseException):
+    def __init__(self, message: str = "should be unreachable", *args, **kwargs):
+        super().__init__(message, *args, **kwargs)
+        self.message = message
+
+
 KeyType = TypeVar("KeyType", contravariant=True)
 SetType = TypeVar("SetType", contravariant=True)
 ReturnType = TypeVar("ReturnType", covariant=True)
