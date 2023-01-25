@@ -5,7 +5,8 @@ description = 'Helpful "kitchen sink" utilities for python.'
 
 
 [project.optional-dependencies]
-all = ["attrs", "requests"]
+all = ["attrs", "requests", "click"]
+cli = ["click"]
 attrs = ["attrs"] # TODO: the attrs code right now doesn't actually use attrs
 requests = ["requests"]
 dev = [
