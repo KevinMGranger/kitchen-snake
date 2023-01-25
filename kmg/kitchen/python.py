@@ -1,8 +1,8 @@
-import inspect
-import enum
-from typing import Callable, TypeVar, Generic, Protocol
-from collections.abc import MutableSequence
 import dataclasses as dc
+import enum
+import inspect
+from collections.abc import MutableSequence
+from typing import Callable, Generic, Protocol, TypeVar
 
 T = TypeVar("T")
 
@@ -27,6 +27,12 @@ class Undefined(enum.Enum):
 
 
 UNDEFINED = Undefined.UNDEFINED
+
+
+def members(obj) -> list[str]:
+    "list all public members (`__dir__`) of an object"
+    return [member for member in dir(obj) if not member.startswith("_")]
+
 
 KeyType = TypeVar("KeyType", contravariant=True)
 SetType = TypeVar("SetType", contravariant=True)
