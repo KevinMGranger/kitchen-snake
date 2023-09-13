@@ -90,6 +90,7 @@ class Server:
         except KeyboardInterrupt:
             print("\nShutting down server")
             self.stop()
+            raise
 
     def stop(self):
         "Stop the server, waiting for shutdown."
