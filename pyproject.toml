@@ -19,7 +19,7 @@ packages = ["kmg"]
 [tool.isort]
 profile = "black"
 
-[tools.pyright]
+[tool.pyright]
 
 # [tools.pytest.ini_options.pytest]
 # asyncio_mode = "auto"
