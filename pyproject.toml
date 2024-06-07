@@ -13,9 +13,6 @@ dev = ["pytest", "pytest-asyncio", "ruff"]
 [tool.setuptools]
 packages = ["kmg"]
 
-[tool.isort]
-profile = "black"
-
 [tool.pyright]
 
 # [tools.pytest.ini_options.pytest]
