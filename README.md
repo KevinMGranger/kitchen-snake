@@ -1,4 +1,4 @@
 🚰 🐍
 
 Everything including the kitchen ~~sink~~ snake:
-unclogging your coding experience.
+unclogging your python experience.
