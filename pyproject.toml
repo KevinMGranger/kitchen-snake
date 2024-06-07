@@ -11,7 +11,7 @@ requests = ["requests"]
 dev = ["pytest", "pytest-asyncio", "ruff"]
 
 [tool.setuptools]
-packages = ["kmg"]
+packages = ["kmg.kitchen"]
 
 [tool.pyright]
 
