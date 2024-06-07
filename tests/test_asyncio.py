@@ -1,4 +1,4 @@
-from typing import Awaitable, Callable
+from typing import Awaitable
 import pytest
 from kmg.kitchen.aio import (
     CancelledFromInside,
