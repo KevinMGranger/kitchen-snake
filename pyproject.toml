@@ -1,6 +1,6 @@
 [project]
 name = "kitchen-snake"
-version = "0.0.7"
+version = "0.0.8"
 description = 'Helpful "kitchen sink" utilities for python.'
 
 
