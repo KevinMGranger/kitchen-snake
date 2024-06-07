@@ -5,13 +5,10 @@ description = 'Helpful "kitchen sink" utilities for python.'
 
 
 [project.optional-dependencies]
-all = ["attrs", "requests", "click"]
+all = ["requests", "click"]
 cli = ["click"]
-attrs = ["attrs"] # TODO: the attrs code right now doesn't actually use attrs
 requests = ["requests"]
-dev = [
-    "ipython", "pytest", "black", "isort", "pylama", "pytest-asyncio"
-]
+dev = ["pytest", "pytest-asyncio", "ruff"]
 
 [tool.setuptools]
 packages = ["kmg"]
